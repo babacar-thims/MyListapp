@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My List App</title>
+    <link rel="stylesheet" href="Lib/themes/Thiam.min.css">
+    <link rel="stylesheet" href="Lib/jquery.mobile.icons.min.css">
+    <link rel="stylesheet" href="Lib/jquery.mobile.structure-1.4.5.min.css">
+
+    <link rel="stylesheet" href="css/index.css">
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="lib/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div data-role="page" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>My List App</h1>
+        </div>
+        <div role="main" class="ui-content" data-theme="a">
+            <form id="taskForm">
+                <label for="task">Ajouter une tâche </label>
+                <input type="text" id="task">
+                <input type="button" value="Ajouter" onclick="ajouterTache()">
+                <input type="button" value="Réinitialiser" onclick="reinitialiser()">
+            </form>
+            <h3>En cours</h3>
+            <ul id="taskList" data-role="listview" data-inset="true" data-theme="a">
+                <li>Tâche 1</li>
+                <li>Tâche 2</li>
+                <li>Tâche 3</li>
+            </ul>
+            <h3>Tâches terminées</h3>
+            <ul id="completedTaskList" data-role="listview" data-inset="true" data-theme="a">
+                <!-- Liste des tâches terminées -->
+            </ul>
+            <div data-role="footer" data-theme="a" data-position="fixed">
+                <h1>Babacar THIAM M2 SRT &copy; 2023-2024</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
